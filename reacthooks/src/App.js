@@ -1,4 +1,5 @@
 import React ,{useState} from 'react'
+import Arrhooks from './components/Arrhooks';
 
 
 const App = () => {
@@ -11,7 +12,7 @@ const App = () => {
     <>
     <h1>{myName}</h1>
     <button onClick={changeName}>click here</button>
-    
+    <Arrhooks/>
     </>
   )
 }
