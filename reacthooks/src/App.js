@@ -1,5 +1,7 @@
 import React ,{useState} from 'react'
 import Arrhooks from './components/Arrhooks';
+import Form from './components/form';
+import Spreadhooks from './components/Spreadhooks';
 
 
 const App = () => {
@@ -13,6 +15,8 @@ const App = () => {
     <h1>{myName}</h1>
     <button onClick={changeName}>click here</button>
     <Arrhooks/>
+    <Spreadhooks/>
+    <Form/>
     </>
   )
 }
