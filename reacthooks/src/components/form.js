@@ -3,9 +3,13 @@ import React, { useState } from "react";
 const Form = () => {
   let [userName, setUserName] = useState();
   let [password, setPassword] = useState();
-  const submitFnc = () => {
+  let [allFormData,setaddFormData]=useState([]);
+  const submitFnc = (event) => {
+      event.preventDefault();
     // setPassword(password);
     // setUserName(userName);
+    let allentry={userName:userName,password:password};
+    setaddFormData([...allFormData,allentry]);
   };
   return (
     <>
