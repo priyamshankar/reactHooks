@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect,useState } from "react";
 
 const Form = () => {
   let [userName, setUserName] = useState();
@@ -11,6 +11,10 @@ const Form = () => {
     let allentry={userName:userName,password:password};
     setaddFormData([...allFormData,allentry]);
   };
+
+  useEffect(()=>{
+    document.title=`${password}`;
+  },[password])
   return (
     <>
       <form onSubmit={submitFnc}>
