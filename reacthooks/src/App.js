@@ -13,7 +13,7 @@ const App = () => {
   return (
     <>
     <h1>{myName}</h1>
-    <button onClick={changeName}>click here</button>
+    <button onClick={changeName}>click here to check if the name is correct</button>
     <Arrhooks/>
     <Spreadhooks/>
     <Form/>
